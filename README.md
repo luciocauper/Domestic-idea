@@ -30,3 +30,27 @@ O espaço de trabalho contém por padrão duas pastas, onde temos que:
 
 src: a pasta para manter os códigos-fonte
 lib: a pasta para manter as dependências
+
+## Como Executar o Projeto
+
+Para executar o projeto localmente, siga estas etapas:
+
+1. **Instalar o Java Development Kit (JDK):**
+   Certifique-se de ter o JDK instalado em seu sistema. Você pode baixar e instalar o JDK mais recente no site oficial da Oracle ou adotar uma distribuição OpenJDK.
+
+2. **Instalar o Visual Studio Code:**
+   Se ainda não tiver o Visual Studio Code instalado, faça o download e instale a versão adequada para o seu sistema operacional no [site oficial](https://code.visualstudio.com/).
+
+3. **Instalar a Extensão do Java para o Visual Studio Code:**
+   Abra o Visual Studio Code e vá para a seção de extensões. Pesquise por "Java Extension Pack" na barra de pesquisa e instale esta extensão. Isso fornece suporte Java essencial.
+
+4. **Configurar o Projeto:**
+   Certifique-se de que seu projeto Java no VS Code tenha uma estrutura típica de projeto Java. Normalmente, você deve ter um diretório `src` para o código-fonte e, se necessário, um diretório `lib` para dependências. Além disso, é útil ter um arquivo `settings.json` na pasta `.vscode` para configurações específicas do projeto.
+
+5. **Executar o Projeto:**
+   - Abra o arquivo Java que contém o método `main` que você deseja executar.
+   - Clique com o botão direito dentro do código e selecione "Run" ou utilize o atalho de teclado (`Ctrl + F5` ou `F5` dependendo do sistema operacional).
+
+   Alternativamente, você pode usar o terminal integrado do Visual Studio Code para compilar e executar seu projeto manualmente.
+
+Lembre-se de que estas são diretrizes gerais e podem variar dependendo da estrutura específica do seu projeto. Certifique-se de ajustar conforme necessário com base nas configurações e necessidades do seu projeto.

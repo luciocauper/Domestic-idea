@@ -18,6 +18,10 @@ O **Domestic Idea** conta com as seguintes funcionalidades:
 
 5. **Visualizar Membros e Tarefas:** Recurso que permite visualizar tanto os membros cadastrados quanto as tarefas pendentes, proporcionando uma visão geral das responsabilidades.
 
+6. **Listar Tarefas:** mostrar as tarefas disponiveis no sistema, alem disso mostra qual o usuario que esta com tarefa.
+
+7. **Sair:** Finalizar o sistema.
+
 ## Linguagem Usada no Projeto
 
 O projeto foi desenvolvido utilizando a linguagem de programação Java, garantindo robustez, flexibilidade e confiabilidade no gerenciamento das informações relacionadas às atividades domésticas.
@@ -28,8 +32,8 @@ Este serviço tem como objetivo simplificar a organização do lar, promovendo u
 
 O espaço de trabalho contém por padrão duas pastas, onde temos que:
 
-src: a pasta para manter os códigos-fonte
-lib: a pasta para manter as dependências
+src: a pasta para manter os códigos-fonte.
+lib: a pasta para manter as dependências.
 
 ## Como Executar o Projeto
 

@@ -32,8 +32,8 @@ Este serviço tem como objetivo simplificar a organização do lar, promovendo u
 
 O espaço de trabalho contém por padrão duas pastas, onde temos que:
 
-src: a pasta para manter os códigos-fonte.
-lib: a pasta para manter as dependências.
+- src: a pasta para manter os códigos-fonte.
+- lib: a pasta para manter as dependências.
 
 ## Como Executar o Projeto
 

@@ -25,12 +25,11 @@ public class CasaController {
 
     public void atribuirTarefaAMembro(int tarefaIndice, int membroIndice) {
         casa.atribuirTarefaAMembro(tarefaIndice, membroIndice);
-        System.out.println("Tarefa atribuida com sucesso! " + tarefaIndice + " " + membroIndice);
     }
 
     public void marcarTarefaComoConcluida(int tarefaIndice) {
         casa.marcarTarefaComoConcluida(tarefaIndice);
-        System.out.println("Tarefa atribuida com sucesso! " + tarefaIndice);
+        System.out.println("Tarefa concluida com sucesso! " + tarefaIndice);
     }
 
     public void listarMembros() {

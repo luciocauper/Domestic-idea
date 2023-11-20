@@ -19,6 +19,8 @@ public class Casa {
             Tarefa tarefa = tarefas.get(tarefaIndice);
             Membro membro = membros.get(membroIndice);
             tarefa.atribuirTarefa(membro);
+
+            System.out.println("Tarefa atribuída a " + membro.getNome() + ".");
         }
     }
 
@@ -48,19 +50,12 @@ public class Casa {
             System.out.println("Tarefas na Casa:");
             for (int i = 0; i < tarefas.size(); i++) {
                 Tarefa tarefa = tarefas.get(i);
-                System.out.println(i + ". " + tarefa.getDescricao());
+                String status = (tarefa.isConcluida()) ? "Concluida" : "Em andamento";
+                String atribuicao = (tarefa.getMembroAtribuido() != null)
+                        ? " (Atribuída a: " + tarefa.getMembroAtribuido().getNome() + ")"
+                        : "";
+                System.out.println(i + ". " + tarefa.getDescricao() + atribuicao + " - " + status);
             }
         }
     }
-
-    // public void listarTarefas() {
-    //     System.out.println("Tarefas na Casa:");
-    //     for (int i = 0; i < tarefas.size(); i++) {
-    //         Tarefa tarefa = tarefas.get(i);
-    //         String atribuicao = (tarefa.getMembroAtribuido() != null)
-    //                 ? " (Atribuída a: " + tarefa.getMembroAtribuido().getNome() + ")"
-    //                 : "";
-    //         System.out.println(i + ". " + tarefa.getDescricao() + atribuicao);
-    //     }
-    // }
 }

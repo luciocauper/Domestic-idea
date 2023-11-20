@@ -15,8 +15,14 @@ public class DomesticIdea {
             System.out.println("4. Marcar Tarefa como Concluída");
             System.out.println("5. Listar Membros");
             System.out.println("6. Listar Tarefas");
-            System.out.println("7. Sair");
+            System.out.println("9. Sair");
             System.out.println("Escolha uma ação:");
+
+            if(!scanner.hasNextInt()){
+                System.out.println("Opção digitida é inválida. tente novamente.");
+                scanner.nextLine();
+                continue;
+            }
 
             int escolha = scanner.nextInt();
             scanner.nextLine();

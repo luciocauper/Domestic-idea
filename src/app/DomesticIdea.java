@@ -1,8 +1,6 @@
 package app;
 import java.util.Scanner;
-
 import controller.CasaController;
-
 
 public class DomesticIdea {
     public static void main(String[] args) {

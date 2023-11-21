@@ -36,7 +36,7 @@ public class DomesticIdea {
                     break;
                 case 2:
                     System.out.println();
-                    System.out.println("Digite a descrição da tarefa:");
+                    System.out.println("Digite o nome da tarefa:");
                     String descricaoTarefa = scanner.nextLine();
                     casaController.adicionarTarefa(descricaoTarefa);
                     break;
@@ -44,9 +44,11 @@ public class DomesticIdea {
                     System.out.println();
                     System.out.println("Digite o número da tarefa:");
                     int tarefaIndice = scanner.nextInt();
+                    int tarefaIndiceReal = tarefaIndice - 1;
                     System.out.println("Digite o número do membro:");
                     int membroIndice = scanner.nextInt();
-                    casaController.atribuirTarefaAMembro(tarefaIndice, membroIndice);
+                    int membroIndiceReal = membroIndice - 1;
+                    casaController.atribuirTarefaAMembro(tarefaIndiceReal, membroIndiceReal);
                     break;
                 case 4:
                     System.out.println();

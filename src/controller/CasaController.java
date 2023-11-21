@@ -15,7 +15,7 @@ public class CasaController {
         Membro novoMembro = new Membro(nome);
         casa.adicionarMembro(novoMembro);
         System.out.println("Membro adicionada com sucesso!");
-        System.out.println("");
+        System.out.println();
     }
 
     public void adicionarTarefa(String descricao) {
@@ -36,12 +36,12 @@ public class CasaController {
     }
 
     public void listarMembros() {
-        System.out.println("Membros cadastrados no sistema");
+        System.out.println("Membros cadastrados no sistema: ");
         casa.listarMembros();
     }
 
     public void listarTarefas() {
-        System.out.println("Tarefas cadastradas no sistema");
+        System.out.println("Tarefas cadastradas no sistema: ");
         casa.listarTarefas();
     }
 }

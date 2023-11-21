@@ -1,4 +1,5 @@
 package model;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,20 +36,22 @@ public class Casa {
     }
 
     public void listarMembros() {
-        if(membros.isEmpty()){
-             System.out.println();
+        if (membros.isEmpty()) {
+            System.out.println();
             System.out.println("Nenhum membro cadastrado!");
-             System.out.println();
-        } else{
+            System.out.println();
+        } else {
             System.out.println("Membros da Casa:");
             for (int i = 0; i < membros.size(); i++) {
-                System.out.println((i + 1) + ". " + membros.get(i).getNome() + " - Créditos: " + membros.get(i).getCreditos());
+                System.out.println(
+                        (i + 1) + ". " + membros.get(i).getNome() + " - Créditos: " + membros.get(i).getCreditos());
             }
+            System.out.println();
         }
     }
 
     public void listarTarefas() {
-        if (tarefas.isEmpty()){
+        if (tarefas.isEmpty()) {
             System.out.println();
             System.out.println("Nenhuma tarefa cadastrada!");
             System.out.println();
@@ -62,6 +65,7 @@ public class Casa {
                         : "";
                 System.out.println((i + 1) + ". " + tarefa.getDescricao() + atribuicao + " - " + status);
             }
+            System.out.println();
         }
     }
 }

@@ -29,16 +29,19 @@ public class DomesticIdea {
 
             switch (escolha) {
                 case 1:
+                    System.out.println();
                     System.out.println("Digite o nome do membro:");
                     String nomeMembro = scanner.nextLine();
                     casaController.adicionarMembro(nomeMembro);
                     break;
                 case 2:
+                    System.out.println();
                     System.out.println("Digite a descrição da tarefa:");
                     String descricaoTarefa = scanner.nextLine();
                     casaController.adicionarTarefa(descricaoTarefa);
                     break;
                 case 3:
+                    System.out.println();
                     System.out.println("Digite o número da tarefa:");
                     int tarefaIndice = scanner.nextInt();
                     System.out.println("Digite o número do membro:");
@@ -46,6 +49,7 @@ public class DomesticIdea {
                     casaController.atribuirTarefaAMembro(tarefaIndice, membroIndice);
                     break;
                 case 4:
+                    System.out.println();
                     System.out.println("Digite o número da tarefa a ser marcada como concluída:");
                     int tarefaIndiceConclusao = scanner.nextInt();
                     casaController.marcarTarefaComoConcluida(tarefaIndiceConclusao);

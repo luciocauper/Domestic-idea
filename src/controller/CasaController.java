@@ -15,12 +15,14 @@ public class CasaController {
         Membro novoMembro = new Membro(nome);
         casa.adicionarMembro(novoMembro);
         System.out.println("Membro adicionada com sucesso!");
+        System.out.println("");
     }
 
     public void adicionarTarefa(String descricao) {
         Tarefa novaTarefa = new Tarefa(descricao);
         casa.adicionarTarefa(novaTarefa);
         System.out.println("Tarefa adicionada com sucesso!");
+        System.out.println();
     }
 
     public void atribuirTarefaAMembro(int tarefaIndice, int membroIndice) {
@@ -30,6 +32,7 @@ public class CasaController {
     public void marcarTarefaComoConcluida(int tarefaIndice) {
         casa.marcarTarefaComoConcluida(tarefaIndice);
         System.out.println("Tarefa concluida com sucesso! " + tarefaIndice);
+        System.out.println();
     }
 
     public void listarMembros() {

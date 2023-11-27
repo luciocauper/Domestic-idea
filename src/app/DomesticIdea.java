@@ -1,11 +1,15 @@
+package app;
+
 import java.util.Scanner;
+import controller.CasaController;
 
 public class DomesticIdea {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Casa casa = new Casa();
+        CasaController casaController = new CasaController();
 
         while (true) {
+            System.out.println("=========================");
             System.out.println("Menu do APP:");
             System.out.println("1. Adicionar Membro");
             System.out.println("2. Adicionar Tarefa");
@@ -14,42 +18,53 @@ public class DomesticIdea {
             System.out.println("5. Listar Membros");
             System.out.println("6. Listar Tarefas");
             System.out.println("7. Sair");
+            System.out.print("Escolha uma ação: ");
 
-            System.out.println("Escolha uma ação:");
+            if (!scanner.hasNextInt()) {
+                System.out.println("Opção digitida é inválida. tente novamente.");
+                scanner.nextLine();
+                continue;
+            }
 
             int escolha = scanner.nextInt();
             scanner.nextLine();
 
             switch (escolha) {
                 case 1:
-                    System.out.println("Digite o nome do membro:");
+                    System.out.println();
+                    System.out.print("Digite o nome do membro: ");
                     String nomeMembro = scanner.nextLine();
-                    Membro novoMembro = new Membro(nomeMembro);
-                    casa.adicionarMembro(novoMembro);
+                    casaController.adicionarMembro(nomeMembro);
                     break;
                 case 2:
-                    System.out.println("Digite a descrição da tarefa:");
+                    System.out.println();
+                    System.out.print("Digite o nome da tarefa: ");
                     String descricaoTarefa = scanner.nextLine();
-                    Tarefa novaTarefa = new Tarefa(descricaoTarefa);
-                    casa.adicionarTarefa(novaTarefa);
+                    casaController.adicionarTarefa(descricaoTarefa);
                     break;
                 case 3:
-                    System.out.println("Digite o número da tarefa:");
+                    System.out.println();
+                    System.out.print("Digite o número da tarefa: ");
                     int tarefaIndice = scanner.nextInt();
-                    System.out.println("Digite o número do membro:");
+                    int tarefaIndiceReal = tarefaIndice - 1;
+                    System.out.print("Digite o número do membro: ");
                     int membroIndice = scanner.nextInt();
-                    casa.atribuirTarefaAMembro(tarefaIndice, membroIndice);
+                    int membroIndiceReal = membroIndice - 1;
+                    casaController.atribuirTarefaAMembro(tarefaIndiceReal, membroIndiceReal);
                     break;
                 case 4:
-                    System.out.println("Digite o número da tarefa a ser marcada como concluída:");
+                    System.out.println();
+                    System.out.print("Digite o número da tarefa a ser marcada como concluída: ");
                     int tarefaIndiceConclusao = scanner.nextInt();
-                    casa.marcarTarefaComoConcluida(tarefaIndiceConclusao);
+                    casaController.marcarTarefaComoConcluida(tarefaIndiceConclusao);
                     break;
                 case 5:
-                    casa.listarMembros();
+                    System.out.println();
+                    casaController.listarMembros();
                     break;
                 case 6:
-                    casa.listarTarefas();
+                    System.out.println();
+                    casaController.listarTarefas();
                     break;
                 case 7:
                     System.out.println("Saindo do programa.");
